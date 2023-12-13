@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+
+.nav-link {
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent !important;
+  &:hover {
+    border-bottom: 2px solid $blanco !important;
+  }
+}
+
+.active {
+  border-bottom: 2px solid $celeste;
+}
+
+nav .container {
+  padding: 0 !important;
+}
+
+.custom-navbar {
+  color: #fff;
+}
+.custom-navbar .nav-link {
+  color: #fff;
+  font-weight: 600;
+}
+
+.custom-toggler {
+  filter: invert(1);
+  border: none;
+}
+
+@media screen and (max-width: 991px) {
+  .custom-navbar {
+    background: linear-gradient(
+      180deg,
+      rgba(197, 199, 208, 0.1) 0%,
+      rgba(197, 199, 208, 0.1) 100%
+    );
+    backdrop-filter: blur(50px);
+    padding: 8px 16px !important;
+    border-radius: 8px;
+  }
+}

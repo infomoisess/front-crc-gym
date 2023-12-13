@@ -1,0 +1,10 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  border-top: 1px solid $gris_1;
+  background: $azul_2;
+}
+
+.footer p {
+  font-size: 18px !important;
+}

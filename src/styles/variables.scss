@@ -1,0 +1,36 @@
+// CRC Colores
+$blanco: #fff;
+$negro: #000;
+$celeste: #0fa2dd;
+$azul: #011d28;
+$azul_2: #021821;
+$verde: #1de591;
+$naranja: #fab855;
+$rojo: #ff514f;
+$amarillo: #fae355;
+$purpura: #953fff;
+$gris_1: #c5c7d0;
+$gris_2: #666666;
+$gris_3: #323338;
+$background-gris: #f5f6f8;
+$degradado: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0.35) 0%,
+  rgba(0, 0, 0, 0.15) 100%
+);
+
+.celeste {
+  color: $celeste !important;
+}
+
+.amarillo {
+  color: $amarillo !important;
+}
+
+.purpura {
+  color: $purpura !important;
+}
+
+.gris {
+  color: $gris_1 !important;
+}

@@ -1,0 +1,17 @@
+.profesor-img {
+  border-radius: 100px;
+  width: 125px;
+  height: 125px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.profesor-img img {
+  height: 100%;
+}
+
+.profesor-card p {
+  font-size: 18px;
+}

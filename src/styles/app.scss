@@ -1,0 +1,262 @@
+@import "variables.scss";
+/* The following line can be included in a src/App.scss */
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  color: $blanco !important;
+  background-color: $azul !important;
+}
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.container {
+  padding: 50px 0px;
+  @media screen and (max-width: 991px) {
+    padding: 16px 0px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px !important;
+  }
+}
+
+a {
+  text-decoration: none !important;
+  color: $blanco !important;
+  text-wrap: nowrap;
+}
+
+.img_float {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  z-index: -100;
+  max-height: 100vh;
+}
+
+.img_float_background {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  max-height: 100vh;
+  z-index: -1;
+  background-image: url("../assets/galeria/image17.jpg");
+  background-size: cover;
+}
+
+.img_float_background_2 {
+  position: absolute;
+  min-height: 100vh;
+  width: 50%;
+  left: 50%;
+  max-height: 100vh;
+  z-index: -1;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
+    url("../assets/galeria/image4.jpg");
+
+  background-size: cover;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 18px */
+  letter-spacing: 1.8px;
+  transition: 0.1s ease;
+  border: none;
+  padding: 16px;
+}
+
+.button-sm {
+  padding: 8px 12px;
+}
+
+.button-md {
+  padding: 16px 30px;
+}
+
+.button-lg {
+  padding: 16px 75px;
+}
+
+.button-primary {
+  color: $blanco;
+  background-color: $celeste;
+  border: none;
+  &:hover {
+    background-color: #005071;
+  }
+}
+
+.button-secondary {
+  color: $blanco;
+  background-color: transparent;
+  border: 1px solid $blanco;
+  &:hover {
+    background-color: rgba($color: #ffffff, $alpha: 0.15);
+  }
+}
+
+h1 {
+  font-family: Barlow;
+  font-size: 114px !important;
+  font-weight: 900 !important;
+  line-height: 124px; /* 108.772% */
+  letter-spacing: 2.28px;
+}
+
+.home-header {
+  min-height: calc(100vh - 210px);
+}
+
+// Texto
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 900 !important;
+  margin: 0;
+  @media screen and (max-width: 991px) {
+    font-size: 3rem !important;
+  }
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  margin: 0;
+}
+
+p {
+  font-size: 24px;
+}
+
+.text-small {
+  font-size: 18px !important;
+}
+
+.text-medium {
+  font-size: 20px !important;
+}
+
+.arrow-size {
+  font-size: 32px !important;
+}
+
+// Colores
+
+.azul {
+  color: $celeste;
+}
+
+.logo-section {
+  padding: 100px 0;
+}
+
+.logo-sponsor {
+  max-height: 65px;
+  @media screen and (max-width: 991px) {
+    max-height: 35px !important;
+  }
+}
+
+.border-radius {
+  border-radius: 8px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.page-title {
+  display: inline-flex;
+  padding-bottom: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.border-bottom-celeste {
+  border-bottom: 6px solid $celeste;
+}
+
+.page-title h2 {
+  font-size: 48px !important;
+  font-weight: 800 !important;
+}
+
+.text-nouppercase {
+  text-transform: none !important;
+}
+
+form input,
+form textarea {
+  color: $blanco !important;
+  padding: 17px 25px !important;
+  border-radius: 8px;
+  border: 1px solid $gris_1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+}
+
+.login input {
+  font-size: 20px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid $gris_1;
+  background: none;
+}
+
+.App-logo {
+  max-width: 200px;
+}
+
+.minHeight-100 {
+  min-height: 100vh !important;
+}
+
+a.celeste:hover {
+  text-decoration: underline !important;
+}
+
+.categories-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: bold;
+  background-color: $rojo;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
