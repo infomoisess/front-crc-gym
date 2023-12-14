@@ -35,7 +35,7 @@ function PlanesCards() {
             <h2 className="fw-bold" style={{ color: plan.color }}>
               {plan.nombre}
             </h2>
-            <h4>{plan.precio}</h4>
+            <h4>$ {plan.precio}</h4>
             <p>{plan.descripcion}</p>
             <Link to="/registrarse">
               <button
