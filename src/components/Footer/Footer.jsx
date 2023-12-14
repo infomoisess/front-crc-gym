@@ -1,4 +1,3 @@
-// NavBar.jsx
 import React from "react";
 import logo from "../../assets/crc_logo.png";
 import facebook from "../../assets/facebook.svg";

@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import "./PlanesCardsStyles.scss";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function PlanesCards() {
+  const API_URL = process.env.REACT_APP_API_URL;
   const [planes, setPlanes] = useState([]);
 
   useEffect(() => {
     axios
-      .get("https://backend-crc-gym.onrender.com/planes")
+      .get(`${API_URL}planes`)
       .then((data) => {
         console.log(data);
         setPlanes(data.data);
@@ -24,12 +26,25 @@ function PlanesCards() {
       </h1>
       <div className="d-flex justify-content-between col-12 flex-wrap gap-5">
         {planes.map((plan) => (
-          <div key={plan.id} className="plan-card col">
+          <div
+            key={plan.id}
+            className="plan-card col"
+            style={{ borderColor: plan.color }}
+          >
             <span>PAQUETE</span>
-            <h3 className="fw-bold">{plan.nombre}</h3>
+            <h2 className="fw-bold" style={{ color: plan.color }}>
+              {plan.nombre}
+            </h2>
             <h4>{plan.precio}</h4>
             <p>{plan.descripcion}</p>
-            <button className="button-md">SUSCRIBIRSE</button>
+            <Link to="/registrarse">
+              <button
+                className="button-md border-radius fw-bold"
+                style={{ backgroundColor: plan.color, border: "none" }}
+              >
+                SUSCRIBIRSE
+              </button>
+            </Link>
           </div>
         ))}
       </div>

@@ -1,35 +1,22 @@
 @import "../../styles/variables.scss";
 
-.active {
-  border-bottom: none;
-}
-
-.button-arrows button {
-  background-color: transparent !important;
+.card-clase {
+  padding: 4px 16px !important;
+  background: rgba(0, 0, 0, 0.15) !important;
   border: none !important;
-  font-size: 52px !important;
-  padding: 0 !important;
-  opacity: 0.5;
-  &:hover {
-    opacity: 1;
+  border-left: 8px solid $blanco !important;
+  h2 {
+    text-transform: unset;
   }
 }
 
-.card {
-  border-radius: 8px !important;
-  border: 1px solid $gris_1 !important;
-  background: linear-gradient(
-    180deg,
-    rgba(197, 199, 208, 0.2) 0%,
-    rgba(197, 199, 208, 0.1) 100%
-  ) !important;
-  backdrop-filter: blur(100px) !important;
-  color: $blanco !important;
-  padding: 20px !important;
-}
-
-.card-body {
+.categories-filters {
   display: flex;
-  flex-direction: column;
-  gap: 8px !important;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
 }

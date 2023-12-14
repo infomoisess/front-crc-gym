@@ -119,6 +119,16 @@ a {
   }
 }
 
+.button-red {
+  color: $blanco;
+  background-color: rgba($color: $rojo, $alpha: 0.25);
+  border: 1px solid $rojo;
+  &:hover {
+    background-color: $rojo;
+  }
+  letter-spacing: 1px;
+}
+
 h1 {
   font-family: Barlow;
   font-size: 114px !important;
@@ -246,17 +256,40 @@ a.celeste:hover {
   text-decoration: underline !important;
 }
 
-.categories-filters {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  border-radius: 8px;
-  padding: 12px;
-  font-weight: bold;
-  background-color: $rojo;
-}
-
 .cursor-pointer {
   cursor: pointer;
+}
+
+.line {
+  height: 25px;
+  width: 2px;
+  background-color: $gris_1;
+}
+
+.horizontal-line {
+  height: 2px;
+  width: 100px;
+  margin: 25px 0;
+  background-color: $gris_1;
+}
+
+.username {
+  font-size: 54px;
+  font-weight: bold;
+}
+
+.paquete {
+  padding: 12px 32px;
+  font-size: 16px;
+  border-radius: 50px;
+  color: $azul;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.error-message {
+  color: $rojo;
+  font-size: 18px;
+  font-weight: 500;
 }

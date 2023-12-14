@@ -6,9 +6,11 @@ import { Card } from "react-bootstrap";
 function ProfesoresCards() {
   const [profesores, setProfesores] = useState([]);
 
+  const API_URL = process.env.REACT_APP_API_URL;
+
   useEffect(() => {
     axios
-      .get("https://backend-crc-gym.onrender.com/profesores")
+      .get(`${API_URL}profesores`)
       .then((data) => {
         console.log(data);
         setProfesores(data.data);

@@ -66,7 +66,7 @@ function ElGym() {
             <ProfesoresCards />
           </div>
         </div>
-        <div className="d-flex flex-column">
+        {/* <div className="d-flex flex-column">
           <div className="d-flex flex-column align-items-center gap-4 py-5 mt-5 col-12 text-center">
             <h1>
               SOCIOS <span className="amarillo">ESTRELLAS</span>
@@ -81,9 +81,8 @@ function ElGym() {
             </p>
           </div>
           <div className="d-flex flex-column gap-4">
-            <ProfesoresCards />
           </div>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>

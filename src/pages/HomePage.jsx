@@ -88,7 +88,6 @@ function HomePage() {
           </div>
         </div>
         <div className="d-flex flex-column justify-content-center align-items-left gap-5 py-5 col-12">
-          {/* Embed de Instagram */}
           <div className="d-flex flex-column gap-4">
             <h2>
               Las últimas <span className="celeste">noticias</span> de la
